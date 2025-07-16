@@ -19,57 +19,119 @@
      color: rgba(255, 255, 255, 0.84);
  }
 
+ #page {
+     flex-direction: column;
+ }
+
  #headingofgame {
-     margin: 100px 0px 100px 0px;
+     margin: 50px 0px 50px 0px;
      padding: 50px;
      padding-top: 0px;
-     font-size: 50px;
+     font-size: 45px;
  }
 
  .parentdiv {
      justify-content: space-evenly;
-     margin: 50px 0px;
-     padding: 50px;
- }
-
- button {
-     margin: 20px;
-     padding: 20px;
-     font-size: 25px;
+     padding: 0px 50px;
  }
 
  .parentscore {
-     justify-content: space-evenly;
-     font-size: 35px;
+     flex-direction: row;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-content: space-between;
+     font-size: 30px;
  }
 
  .logo {
      border: 2px solid black;
      margin: 50px;
-     padding: 100px;
+     padding: 50px;
      font-size: 16px;
      color: black;
      border-radius: 100%;
      background-color: white;
-
  }
 
  .logo:hover {
-     padding: 90px;
+     padding: 40px;
      border: 10px solid black;
  }
 
  #result {
-     margin: 100px 20vw 100px 20vw;
+     margin: 50px 0px;
      font-size: 30px;
      width: 20vw;
      border-radius: 100px;
-     padding: 50px;
-     background-color: rgb(40, 142, 22);
+     padding: 30px;
+     background-color: green;
  }
 
- /* @media (min-width:1200px){
-    *{
-        background-color: blue;
-    }
- } */
+ .score {
+     margin: 0px 5vw;
+ }
+
+ @media (max-width:1200px) {
+     .logo {
+         padding: 50px;
+         margin: 25px;
+     }
+
+     .logo:hover {
+         padding: 45px;
+         border: 10px solid rgb(29, 21, 21);
+     }
+
+     #headingofgame {
+         margin: 50px 0px 50px 0px;
+         padding: 30px;
+         font-size: 30px;
+     }
+
+     #result {
+         font-size: 16px;
+         padding: 15px 80px;
+     }
+ }
+
+ @media (max-width:730px) {
+     .logo {
+         padding: 30px;
+         margin: 25px;
+     }
+
+     .logo:hover {
+         padding: 20px;
+         border: 10px solid rgb(29, 21, 21);
+     }
+
+     #headingofgame {
+         margin: 50px 0px 50px 0px;
+         padding: 20px;
+         font-size: 18px;
+     }
+
+     #result {
+         font-size: 16px;
+         padding: 10px 50px;
+     }
+
+     .parentscore {
+         font-size: 20px;
+     }
+
+ }
+
+ @media (max-width:600px) {
+     .parentdiv {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 0;
+         margin: 0;
+     }
+
+     #result {
+         font-size: 12px;
+         padding: 10px 80px;
+     }
+ }
